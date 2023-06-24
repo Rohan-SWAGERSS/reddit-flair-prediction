@@ -10,8 +10,8 @@ import numpy as np
 import sklearn
 
 model = pickle.load(open('models/final_model_askscience.pkl','rb'))
-reddit = praw.Reddit(client_id="JRcFlWEyHaacXWOTDcxsHw",
-                     client_secret="2wTFbG3TSqZoSVc8wlr1S_tICeIUYA",
+reddit = praw.Reddit(client_id="APP_CLIENT_ID",
+                     client_secret="APP_CLIENT_SECRET",
                      user_agent="scrapper 1.0 by /u/rohan_swagers")
 
 REPLACE_BY_SPACE = re.compile('[/(){}\[\]\|@,;]')
